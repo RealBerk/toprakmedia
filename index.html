@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toprak Media - Software</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- flaticon web font -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./img/logo2.jpg" alt="Toprak Media">
+            <a href="#" id="burger"><i class="fi fi-rr-menu-burger"></i></a>
+            <ul id="menu">
+                <li><a href="#">Anasayfa</a></li>
+                <li><a href="#">Game Script</a></li>
+                <li><a href="#">Web Script</a></li>
+                <li><a href="#">Discord</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="./js/main.js"></script>
+    <script>
+        let icon = document.getElementById('burger');
+        let menu = document.getElementById('menu');
+        
+        icon.addEventListener('click',()=>{
+            menu.classList.toggle('scale');
+        })
+    </script>
+</body>
+</html>
